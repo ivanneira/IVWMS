@@ -27,3 +27,8 @@ $app->get('/get_pagos', function (){
 
     return getData();
 });
+
+$app->get('/clientes', function($request,$response,$args) use($app){
+
+   return $this->renderer->render($response, 'view_clientes.php', $args);
+});

@@ -8,9 +8,14 @@ $(function () {
         getContent('pagos');
     });
 
+    $("#btnClientes").click(function(){
+
+        getContent('clientes');
+    });
+
     function getContent(direction){
 
-        $.get('pagos', function(data){
+        $.get(direction, function(data){
 
             $("#mainContainer").html(data);
         });

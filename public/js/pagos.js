@@ -26,9 +26,7 @@ function fillTable(data) {
             {'data': 'Fecha', 'title': 'fecha'},
             {'data': 'Referencia', 'title': 'Referencia'},
             {'data': 'Codigo', 'title': 'Codigo'},
-            {'data': 'Bruto', 'title': 'Bruto'},
-            {'data': 'Costo', 'title': 'Costo'},
-            {'data': 'Neto', 'title': 'Neto'}
+            {'data': 'Pago', 'title': 'Pago'}
         ]
     });
 }
