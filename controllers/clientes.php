@@ -8,26 +8,11 @@
 
 require_once '../database/dbclass.php';
 
-function getData(){
+function getClientes(){
 
     $con = new mysql();
 
-    $result = $con->json_query('SELECT * FROM cuentadigital');
+    $result = $con->json_query('SELECT * FROM cliente');
 
     return $result;
-}
-
-class pagos{
-
-    public $ID;
-    public $Fecha;
-    public $Referencia;
-    public $Codigo;
-    public $Bruto;
-    public $Costo;
-    public $Neto;
-
-    public function __construct(){
-
-    }
 }

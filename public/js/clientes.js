@@ -6,13 +6,16 @@ $.ajax({
     url: 'get_clientes',
     type: "GET",
     global: true,
-    cache:false,
-    dataType: 'json'
-
-}).done(function(data) {
-    console.dir(data);
-    fillTable(data);
-
+    cache: false,
+    dataType: 'json',
+    success: function (data) {
+        console.dir(data);
+        fillTable(data);
+    },
+    error: function (e) {
+        console.log("error en el método ajax");
+        console.log(e);
+    }
 });
 
 function fillTable(data) {
@@ -26,6 +29,7 @@ function fillTable(data) {
             {'data': 'Apellido', 'title': 'apellido'},
             {'data': 'Direccion', 'title': 'dirección'},
             {'data': 'Referencia', 'title': 'referencia'},
+            {'data': 'TelefonoID', 'title': 'teléfono'},
             {'data': 'IP', 'title': 'ip'},
             {'data': 'Comentarios', 'title': 'comentarios'}
         ]

@@ -7,6 +7,8 @@
  */
 ?>
 
+<link rel="stylesheet" type="text/css" href="../public/css/jquery.dataTables.min.css"/>
+<script type="text/javascript" src="../public/js/jquery.dataTables.min.js"></script>
 
 <script src="../public/js/clientes.js"></script>
 

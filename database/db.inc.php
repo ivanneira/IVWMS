@@ -7,7 +7,7 @@
 **/
 
 
-define ('DATABASE_NAME' , 'IVWMS');
+define ('DATABASE_NAME' , 'ivwms');
 
 define ('DATABASE_HOST', 'localhost');
 

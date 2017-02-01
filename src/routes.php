@@ -21,18 +21,18 @@ $app->get('/pagos', function ($request, $response, $args) use($app){
     return $this->renderer->render($response, 'view_pagos.php', $args);
 });
 
-$app->get('/get_pagos', function (){
+$app->get('/get_pagos', function ($request, $response, $args) use($app){
 
     include_once ('../controllers/pagos.php');
 
     return getData();
 });
 
-$app->get('/get_clientes', function (){
+$app->get('/get_clientes', function ($request, $response, $args) use($app){
 
     include_once ('../controllers/clientes.php');
 
-    return getData();
+    return getClientes();
 });
 
 $app->get('/clientes', function($request,$response,$args) use($app){

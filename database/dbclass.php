@@ -47,7 +47,7 @@ class mysql {
         $data = array();
         $i = 0;
 
-        while ($row = $sentence->fetch(PDO::FETCH_OBJ)) {
+        while ($row = $sentence->fetch(PDO::FETCH_ASSOC)) {
             $data[$i] = $row;
             $i++;
         }
